@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export const Container = styled.header` 
+
+export const Container = styled.header `
   grid-area: header;
 
   height: 105px;
@@ -13,12 +14,11 @@ export const Container = styled.header`
 
   display: flex;
   justify-content: space-between;
-  
+
   padding: 0 80px;
+`
 
-`;
-
-export const Profile = styled(Link)`
+export const Profile = styled(Link) `
   display: flex;
   align-items: center;
 
@@ -43,10 +43,11 @@ export const Profile = styled(Link)`
       font-size: 18px;
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
-  }  
+  }
+
 `;
 
-export const Logout = styled.button`
+export const Logout = styled.button `
   border: none;
   background: none;
 

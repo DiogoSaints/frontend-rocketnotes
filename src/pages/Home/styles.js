@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
@@ -16,26 +16,26 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
+
 export const Brand = styled.div`
   grid-area: brand;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-
+  border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_800};
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   > h1 {
     font-size: 24px;
     color: ${({ theme }) => theme.COLORS.ORANGE};
-  }  
+  }
 `;
-export const Menu = styled.ul`
+
+export const Menu  = styled.ul`
   grid-area: menu;
+
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   padding-top: 64px;
@@ -45,20 +45,24 @@ export const Menu = styled.ul`
     margin-bottom: 24px;
   }
 `;
-export const Search = styled.div`
+
+export const Search  = styled.div`
   grid-area: search;
   padding: 64px 64px 0;
-`;
-export const Content = styled.div`
+  `;
+
+export const Content  = styled.div`
   grid-area: content;
   padding: 0 64px;
   overflow-y: auto;
-`;
+  `;
+
 export const NewNote = styled(Link)`
   grid-area: newnote;
 
   background-color: ${({ theme }) => theme.COLORS.ORANGE};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  border: none;
 
   display: flex;
   align-items: center;
@@ -67,4 +71,4 @@ export const NewNote = styled(Link)`
   svg {
     margin-right: 8px;
   }
-`;
+  `;

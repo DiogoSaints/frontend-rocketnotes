@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -6,9 +6,9 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-rows: 105px auto;
-  grid-template-areas:
-    "header"
-    "content";
+  grid-template-areas: 
+  "header"
+  "content";
 
   > main {
     grid-area: content;
@@ -30,11 +30,13 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 36px;
-  }
 
-  a {
-    font-size: 20px;
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    margin-bottom: 36px;
+
+    button {
+      font-size: 16px;
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
+    }
   }
 `;
+

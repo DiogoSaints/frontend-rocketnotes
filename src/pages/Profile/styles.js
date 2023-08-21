@@ -6,13 +6,16 @@ export const Container = styled.div`
   > header {
     width: 100%;
     height: 144px;
-
     background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     display: flex;
     align-items: center;
-
     padding: 0 124px;
+
+    button {
+      background: none;
+      border: none;
+    }
 
     svg {
       color: ${({ theme }) => theme.COLORS.GRAY_100};
@@ -23,7 +26,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   max-width: 340px;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
 
   > div:nth-child(4) {
     margin-top: 24px;
@@ -46,9 +49,9 @@ export const Avatar = styled.div`
   > label {
     width: 48px;
     height: 48px;
+    border-radius: 50%;
 
     background-color: ${({ theme }) => theme.COLORS.ORANGE};
-    border-radius: 50%;
 
     display: flex;
     align-items: center;
@@ -57,7 +60,7 @@ export const Avatar = styled.div`
     position: absolute;
     bottom: 7px;
     right: 7px;
-    
+
     cursor: pointer;
 
     input {
@@ -67,6 +70,7 @@ export const Avatar = styled.div`
     svg {
       width: 20px;
       height: 20px;
+
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
   }
